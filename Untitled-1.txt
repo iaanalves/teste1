@@ -1,0 +1,37 @@
+https://marvelapp.com/ad52316
+*o que eu espero desse projeto:
+- que tenha o arquivo de css na pasta css
+- que tenha uma pasta img, com essas imagens dentro (nao quero mais, pegas da internet)
+- que o botão Mostrar mais do Ednaldo, leve ele pro canal do YouTube, e o do András, leve pra uma pagina de pesquisa do Google sobre o nome dele
+- que a font usada seja a Open Sans
+- o projeto seja colocado no github
+
+------------------------------------------------------
+"todo dia, antes de encerrar as alterações, quero que voce suba commitando tudo ai, usando esse comando 
+
+------------------------------------------------------
+- git add -A && git commit -m "sua mensagem de commit "
+- git push -u origin master"
+
+------------------------------------------------------
+*SE FOR UM PROJETO NOVO:
+- entrar na sua pasta do projeto
+- git init
+- git add -A && git commit -m "sua mensagem de commit "
+- git remote add origin [aqui vai a url do seu repositorio ]
+- git push -u origin master
+
+*SE FOR UM PROJETO EXISTENTE E TEVE SOMENTE ALTERAÇÕES DE ARQUIVO:
+- entrar na sua pasta do projeto
+- git add -A && git commit -m "sua mensagem de commit "
+- git push -u origin master
+
+*git init: inicia o git na pasta do seu projeto
+git add -A && git commit -m "sua mensagem de commit" : 
+- git add -A: pega TODOS  os arquivos e adiciona na fila, pra subir pro repositorio
+- git commit -m "sua mensagem do commit": voce deixa uma mensagem pra voce mesmo e pra outros que foram pegar seu projeto, dizendo o que teve de alterações"
+git remote add origin [aqui vai a url do seu repositorio ]: 
+- git remote add origin: adiciona um repositorio na nuvem, na qual voce vai mandar seus arquivos
+git push -u origin master: 
+- git push: empurra seus arquivos
+- origin master: empurra seus arquivos para a "branch" master
