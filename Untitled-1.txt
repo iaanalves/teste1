@@ -1,7 +1,7 @@
 https://marvelapp.com/ad52316
 *o que eu espero desse projeto:
 - que tenha o arquivo de css na pasta css
-- que tenha uma pasta img, com essas imagens dentro (nao quero mais, pegas da internet)
+Ok que tenha uma pasta img, com essas imagens dentro (nao quero mais, pegas da internet) 
 - que o botão Mostrar mais do Ednaldo, leve ele pro canal do YouTube, e o do András, leve pra uma pagina de pesquisa do Google sobre o nome dele
 - que a font usada seja a Open Sans
 - o projeto seja colocado no github
