@@ -5,13 +5,16 @@
 <title>Projeto Ednaldo</title>
 <link rel="Csssheet" href="C:\Users\ian_d\OneDrive\Documentos\teste1\Csssheet.css">
 <style>
-* {
-  box-sizing: border-box;
+.content{
+    max-width: 400px;
+    margin: auto;
 }
-.header {
-    background-color:white;
+.header {  
+    display:center;
+    padding: 40px;
     text-align: center;
-    padding: 20px;
+    background: #212121;
+    font-size: 26px;    
 }   
 .column {    
     flex: 1;  
@@ -26,18 +29,16 @@
 }
 .column-dois{
     float: right;
-    width: 32%;}
-
+    width: 32%;
+}
 .column-tres{
     display: inline-block;
     width: 32%;
 }
-
 .container {
     display:flex;
     justify-content:space-around; 
-    align-content:center; 
-       
+    align-content:center;       
     }
 .container div{
     display: inline-block;
@@ -52,10 +53,12 @@
     width:400px;
     padding: 20px;
     }   
-    .text-color {
+.text-color {
     color:white
     }
 body {
+    padding-top: 100px;
+    padding-bottom:60px;
     margin:0;
     background-color: #424242;
     }
@@ -78,6 +81,11 @@ a.button {
 
 </head>
 <body>
+<div class="header">
+    <h1>OS MAIORES DEUSES DO SÉCULOS 21</h1>
+</div>
+
+<section class="content">
 <h1>Ednaldo Pereira <a href="https://www.youtube.com/channel/UCLzb8VJaApoEZ6Bbmmq-oEA" class="button"> Mostrar Mais </a> </h1>
 <p>Ednaldo Pereira what is the brother</p>
 <section class="container flex">  
@@ -114,6 +122,6 @@ a.button {
     </ul>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 </div>    
-
+</section>
 </body>
 </html>    
