@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="-UTF-8">
-    <title>Projeto Ednaldo</title>
-    <link rel="Csssheet" href="C:\Users\ian_d\OneDrive\Documentos\teste1\Csssheet.css">
+<meta charset="-UTF-8">
+<title>Projeto Ednaldo</title>
+<link rel="Csssheet" href="C:\Users\ian_d\OneDrive\Documentos\teste1\Csssheet.css">
 <style>
-    .container {
-        display:flex;
-        justify-content:space-around; 
-        align-content:center;    
+* {
+  box-sizing: border-box;
+}
+.header {
+    background-color:white;
+    text-align: center;
+    padding: 20px;
+}   
+.column {    
+    flex: 1;  
+    background: none;  
+    border: 1px;
+    box-sizing: border-box;
+}
+.column-um{
+    float: left;
+    width: 32%;
+    height: 32%;
+}
+.column-dois{
+    float: right;
+    width: 32%;}
+
+.column-tres{
+    display: inline-block;
+    width: 32%;
+}
+
+.container {
+    display:flex;
+    justify-content:space-around; 
+    align-content:center; 
+       
+    }
+.container div{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.item1 {
+    width:400px;
+    padding: 20px;
     }   
-    .item1 {
-        width:400px;
-        padding: 20px;
-    }   
-    .item2 {
-        width:400px;
-        padding: 20px;
+.item2 {
+    width:400px;
+    padding: 20px;
     }   
     .text-color {
-        color:white
+    color:white
     }
-    body {
-        background-color: #424242;
+body {
+    margin:0;
+    background-color: #424242;
     }
-    p {
-        color: white;
-        font-size: 25px;
+p {
+    color: white;
+    font-size: 25px;
     }
-    h1 {
-        color: white;
+h1 {
+    color: white;
     }
-    a.button {
-        display: inline-block;
-        padding: 0.2em 1.20em;
-        margin: 0.1em;
-        box-sizing: border-box;        
-        
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-        text-align: center;
-        position: relative;
-        text-decoration: white;
-        color: tomato;
-    }
+a.button {
+    display: inline-block;
+    padding: 0.2em 1.20em;
+    margin: 0.1em;
+    box-sizing: border-box;
+   
+    color: tomato;
+}
 </style>
 
 </head>
@@ -56,8 +85,14 @@
     <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo2.png">
     <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo3.jpg">
     <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo4.png">
-
 </section>
+
+<div clas="container">
+    <div class="column column-um text-color"> texto de exemplo</div>
+    <div class="column column-dois text-color"> texto de exemplo</div>
+    <div class="column column-tres text-color"> texto de exemplo</div>
+
+</div>
 
 <h1>András Aratos <a href="https://www.google.com/search?q=andr%C3%A1s+arat%C3%B3&oq=andr%C3%A1s+ara&aqs=chrome.0.0j46j69i57j0l4j69i60.1823j0j7&sourceid=chrome&ie=UTF-8" class="button"> Mostrar Mais </a> </h1> 
 
@@ -67,7 +102,18 @@
     <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras2.png">
     <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras3.jpg">
     <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras4.jpg">
-</section>    
+</section>
+
+<div clas=column>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <h1>musicas</h1>
+    <ul class="text-color">
+        <li>musica um</li>
+        <li>musica dois</li>
+        <li>musica tres</li>
+    </ul>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+</div>    
 
 </body>
 </html>    
