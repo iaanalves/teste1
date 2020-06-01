@@ -3,125 +3,100 @@
 <head>
 <meta charset="-UTF-8">
 <title>Projeto Ednaldo</title>
-<link rel="Csssheet" href="C:\Users\ian_d\OneDrive\Documentos\teste1\Csssheet.css">
 <style>
-.content{
-    max-width: 400px;
-    margin: auto;
-}
-.header {  
+    * {
+    box-sizing: border-box;
+    }
+    body {          
+    margin:0;
+    background-color: #424242;
+    }
+    .header {  
     display:center;
     padding: 40px;
     text-align: center;
     background: #212121;
-    font-size: 26px;    
-}   
-.column {    
-    flex: 1;  
-    background: none;  
-    border: 1px;
-    box-sizing: border-box;
-}
-.column-um{
-    float: left;
-    width: 32%;
-    height: 32%;
-}
-.column-dois{
-    float: right;
-    width: 32%;
-}
-.column-tres{
-    display: inline-block;
-    width: 32%;
-}
-.container {
-    display:flex;
-    justify-content:space-around; 
-    align-content:center;       
+    font-size: 20px;
     }
-.container div{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 50px;
-}
-.item1 {
-    width:400px;
-    padding: 20px;
-    }   
-.item2 {
-    width:400px;
-    padding: 20px;
-    }   
-.text-color {
+    .text-color {
     color:white
     }
-body {
-    padding-top: 100px;
-    padding-bottom:60px;
-    margin:0;
-    background-color: #424242;
+    .flex-item{
+        justify-content: center: space-between;
     }
-p {
-    color: white;
-    font-size: 25px;
-    }
-h1 {
-    color: white;
-    }
-a.button {
-    display: inline-block;
-    padding: 0.2em 1.20em;
-    margin: 0.1em;
-    box-sizing: border-box;
-   
-    color: tomato;
+    .content{
+    max-width: 300px; 
+    margin: auto;
+    align-content:center;
+    padding: 20px;   
+}
+.container {    
+    display:flex;
+    justify-content:space-around;          
+}
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.flexbox .col {
+  flex: 1;
+}
+.flexbox .colunauma:nth-child(1) {
+  background:none;
+  order: 1;
+}
+.flexbox .colunaduas:nth-child(2) {
+  background:none;
+  order: 0;
+}
+.flexbox .colunatres:nth-child(3) {
+  background:none;
+  order: 2;
 }
 </style>
-
-</head>
 <body>
-<div class="header">
-    <h1>OS MAIORES DEUSES DO SÉCULOS 21</h1>
+    <div class="header text-color">
+        <h1>OS MAIORES DEUSES DO SÉCULOS 21</h1>
 </div>
 
 <section class="content">
-<h1>Ednaldo Pereira <a href="https://www.youtube.com/channel/UCLzb8VJaApoEZ6Bbmmq-oEA" class="button"> Mostrar Mais </a> </h1>
-<p>Ednaldo Pereira what is the brother</p>
-<section class="container flex">  
-    <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo1.png">
-    <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo2.png">
-    <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo3.jpg">
-    <img class="item1" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo4.png">
+<h1 class="container text-color">Ednaldo Pereira</h1>
+<p class="container text-color" >Ednaldo Pereira what is the brother</p>
+    <section class="container">  
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo1.png">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo2.png">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo3.jpg">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo4.png">
+    </section>
+<section>
+    <div class="text-color flexbox">
+        <div class="colunauma"><h3>I am listed first in source order.</h3><p>ASDASDASDASDASD</p></div>
+        <div class="colunaduas"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+        <div class="colunatres"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+    </div>
+    
+
 </section>
 
-<div clas="container">
-    <div class="column column-um text-color"> texto de exemplo</div>
-    <div class="column column-dois text-color"> texto de exemplo</div>
-    <div class="column column-tres text-color"> texto de exemplo</div>
-
+</section>
+<section class="content">
+    <h1 class="container text-color">Ednaldo Pereira</h1>
+    <p class="container text-color" >Ednaldo Pereira what is the brother</p>
+    <section class="container">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras1.jpg">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras2.png">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras3.jpg">
+        <img class="content" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras4.jpg">
+    </section> 
+</section>
+<div class="text-color flexbox">
+    <div class="colunauma"><h3>I am listed first in source order.</h3><p>ASDASDASDASDASD</p></div>
+    <div class="colunaduas"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+    <div class="colunatres"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
 </div>
 
-<h1>András Aratos <a href="https://www.google.com/search?q=andr%C3%A1s+arat%C3%B3&oq=andr%C3%A1s+ara&aqs=chrome.0.0j46j69i57j0l4j69i60.1823j0j7&sourceid=chrome&ie=UTF-8" class="button"> Mostrar Mais </a> </h1> 
 
-<p>a respeito do famoso hide the pain</p>
-<section class="container flex">
-    <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras1.jpg">
-    <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras2.png">
-    <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras3.jpg">
-    <img class="item2" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras4.jpg">
-</section>
-
-<div clas=column>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-    <h1>musicas</h1>
-    <ul class="text-color">
-        <li>musica um</li>
-        <li>musica dois</li>
-        <li>musica tres</li>
-    </ul>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-</div>    
-</section>
 </body>
-</html>    
+</html>  
