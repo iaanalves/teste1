@@ -1,0 +1,49 @@
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+        body {
+            background-color: #424242;            
+            color: white;
+            font-family: 'Montserrat', sans-serif;            
+        }   
+
+        .header {
+            padding: 40px;
+            text-align: center;
+            background: #212121;
+            font-size: 20px;
+        }
+
+        .img {
+            width: 300px;
+            margin: auto;
+            padding: 15px;
+        }       
+
+        .column {
+            text-align: center;          
+            display: flex;            
+            padding: 50px;
+            width: 33%;
+            height: auto; 
+        }      
+            
+        .row {            
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            display: center;
+            margin-right: 4%;
+            margin-left: 4%;     
+            clear: both;       
+        }            
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            margin-right: 5%;
+            margin-left: 5%;
+            justify-content: center;
+        }
+        
