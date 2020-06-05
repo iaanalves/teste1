@@ -1,63 +1,126 @@
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
-        body {
-            background-color: #424242;            
-            color: white;
-            font-family: 'Montserrat', sans-serif;            
-        }   
+body {
+    background-color: #424242;            
+    color: white;
+    font-family: 'Montserrat', sans-serif;            
+}   
 
-        .header {
-            padding: 40px;
-            text-align: center;
-            background: #212121;
-            font-size: 20px;
-        }
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #212121;
+    font-size: 20px;
+    box-sizing: border-box;
+}
 
-        .img {
-            width: 300px;
-            margin: auto;
-            padding: 15px;
-        }       
+.header h1 {
+    color: white;
+}
 
-        .column {
-            text-align: center;          
-            display: flex;            
-            padding: 50px;
-            width: 33%;
-            height: auto; 
-        }      
-            
-        .row {            
-            display: flex;
-            justify-content: space-around;
-            height: auto;
-            display: center;
-            margin-right: 4%;
-            margin-left: 4%;     
-            clear: both;       
-        }            
-        
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            display: flex;
-            margin-right: 5%;
-            margin-left: 5%;
-            justify-content: center;
-        }
-        .button {            
-            background-color: #f24f29 ;
-            color:white;
-            border-radius: 4px;
-            padding: 15px 35px;
-            text-decoration: none;
-            text-align: center;
-            display:inline-block;
-            font-size: 16px;
-            transition-duration: 0.5s;
-        }
-        .button:hover {
-            background-color:grey ;
-            color: white;
-        }
+.content-profile {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 50px;
+    clear: both;
+    background-color: indigo;
+}
+
+.title-profile {
+    width: 100%;
+    height: auto;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    /*background-color: #616161;*/
+    background-color: greenyellow;
+}
+
+.title-profile h2 {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title-profile a {
+    float: right;
+}
+
+.subtitle-profile {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: magenta;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.img {
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+}       
+
+.description-profile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    margin-top: 20px;
+}
+
+.column {         
+    width: 33%;
+    height: auto; 
+    background-color: red;
+    padding: 20px;
+    margin: 0 20px;
+}      
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: right;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.row {        
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    /* [ display: center; ] desnecessário */
+}            
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-direction: column;
+    /* justify-content: center; >>> não é necessario neste caso, somente o flex já deveria alinhar */
+    box-sizing: border-box; /* evita estourar de 90% o tamanho com alterações internas */
+}
+
+.button {            
+    background-color: #f24f29 ;
+    color:white;
+    border-radius: 4px;
+    padding: 15px 35px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+.button:hover {
+    background-color:grey ;
+    color: white;
+}
