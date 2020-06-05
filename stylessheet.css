@@ -3,49 +3,146 @@
 
         body {
             background-color: #424242;            
-            color: white;
-            font-family: 'Montserrat', sans-serif;            
+            /* [ color: white; ] isso vai mudar a cor do texto, aqui ele nao se aplica*/
+            font-family: 'Montserrat', sans-serif;          
+            padding-bottom: 100px;  
+            box-sizing: border-box;
         }   
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
 
         .header {
             padding: 40px;
             text-align: center;
             background: #212121;
-            font-size: 20px;
+            font-size: 40px;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            color: white;
+        }
+
+        .content-profile {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            margin-top: 30px;
+            clear: both;
+        }
+
+        .title-profile {
+            width: 95%;
+            height: auto;
+            padding: 20px;
+            font-size: 32px;
+            margin: 40px;
+            box-sizing: border-box;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            background-color: #616161;
+            border-radius: 6px;
+        }
+
+        .title-profile h2 {
+            margin-top: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .title-profile a {
+            float: right;
+        }
+
+        .subtitle-profile {
+            width: 100%;
+            height: auto;
+            color: white;
+            margin-top: 20px;
+            box-sizing: border-box;
+            padding: 40px;
         }
 
         .img {
-            width: 300px;
+            width: 250px;
             margin: auto;
-            padding: 15px;
-        }       
+            flex: 1;
+            margin: 40px;
+            border: 2px solid white;
+            border-radius: 4px;
+        }     
 
-        .column {
-            text-align: center;          
-            display: flex;            
-            padding: 50px;
+        .img:hover {
+            border: 2px solid #F4511E;
+        }
+
+        .description-profile {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .column {         
             width: 33%;
             height: auto; 
+            vertical-align: middle;
+            padding: 20px;
+            margin: 0 20px;
         }      
-            
-        .row {            
+
+        ul {
+            display: inline-block;
+        }
+
+        ul li {
+            text-align: center;
+            font-size: 20px;
+            list-style: disc;
+            color: white;
+        }
+
+        ol li {
+            text-align: center;
+            font-size: 20px;
+            list-style: upper-roman;
+            color: white;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .row {        
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            flex-flow: row wrap;
             height: auto;
-            display: center;
-            margin-right: 4%;
-            margin-left: 4%;     
-            clear: both;       
+            /* [ display: center; ] desnecessário */
         }            
-        
+
         .container {
-            max-width: 100%;
+            width: 80%;
             margin: 0 auto;
             display: flex;
-            margin-right: 5%;
-            margin-left: 5%;
-            justify-content: center;
+            flex-direction: column;
+            /* justify-content: center; >>> não é necessario neste caso, somente o flex já deveria alinhar */
+            box-sizing: border-box; /* evita estourar de 90% o tamanho com alterações internas */
         }
+
         .button {            
             background-color: #f24f29 ;
             color:white;
@@ -53,11 +150,17 @@
             padding: 15px 35px;
             text-decoration: none;
             text-align: center;
-            display:inline-block;
             font-size: 16px;
             transition-duration: 0.5s;
         }
         .button:hover {
             background-color:grey ;
             color: white;
+        }
+
+        hr {
+            width: 95%;
+            margin-top: 40px;
+            height: 1px;
+            border: 1px solid #EEEEEE;
         }

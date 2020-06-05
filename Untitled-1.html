@@ -8,62 +8,117 @@
     <title>Projeto Ednaldo</title>
 </head>
 
-
 <body>
-    <div class="header">
-        <h1 style="color: white;">OS MAIORES DEUSES DO SÉCULOS 21</h1>
-    </div>
+    <!-- 
+        semanticamente, header costuma ter apenas UM na pagina
+        logo, o class se torna redundante
+    -->
+    <header class="header">
+        <!-- style dentro da tag não é uma boa prática, sempre deixe no arquivo de CSS -->
+        <!-- <h1 style="color: white;">OS MAIORES DEUSES DO SÉCULOS 21</h1> -->
 
-    <section class="container">Ednaldo Pereira <a href="https://www.youtube.com/user/oEdnaldoPereira"
-            class="button">Mostrar mais</a></section>
-    <section class="container">A respeito do famoso Ednaldo Pereira</section>
-
-
-    <section class="row">
-        <section class="row">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo1.png">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo2.png">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo3.jpg">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Ednaldo4.png">
-        </section>
-    </section>
-
-    <section class="container row-nowrap">
-        <section class="column flex-item-1">
-            Ednaldo Pereira é um cantor e compositor nascido no Distrito de Cachoeira dos Guedes, na cidade de
-            Guarabira, Paraíba</section>
-        <section class="column flex-item-1">Ednaldo Pereira é um cantor e compositor nascido no Distrito de Cachoeira
-            dos
-            Guedes, na cidade de
-            Guarabira, Paraíba</section>
-        <section class="column flex-item-1">Ednaldo Pereira é um cantor e compositor nascido no Distrito de Cachoeira
-            dos
-            Guedes, na cidade de
-            Guarabira, Paraíba
-        </section>
-    </section>
-
-    <section class="container">András Arató <a
-            href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCorsTDLSSkzYPTiS8xLKTq8sFghsSix5PBmAKDRC4I&q=andr%C3%A1s+arat%C3%B3&oq=andr%C3%A1s+a&aqs=chrome.1.69i57j46j69i59j0l4j69i60.2537j0j7&sourceid=chrome&ie=UTF-8"
-            class="button">Mostrar mais</a></section>
-    <section class="container">A respeito do famoso András</section>
-
-    <section class="row">
-        <section class="row">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras1.jpg">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras2.png">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras3.jpg">
-            <img class="img" src="C:\Users\ian_d\OneDrive\Documentos\teste1\Imgs\Andras4.jpg">
-        </section>
-    </section>
+        <!-- solução do caso de cima: -->
+        <h1>OS MAIORES DEUSES DO SÉCULOS 21</h1>
+    </header>
 
     <section class="container">
-        <section class="column container">András András asdasdasdasdasdasdasadssadsadsa</section>
-        <section class="column">András András asdasdasdasdasdasdasadssadsadsa</section>
-        <section class="column">András András asdasdasdasdasdasdasadssadsadsa</section>
-    </section>
+        <section class="content-profile">
+            <section class="title-profile">
+                <h2>Ednaldo Pereira</h2>
+                <a href="https://www.youtube.com/user/oEdnaldoPereira" class="button">Mostrar mais</a>
+            </section>
 
+            <p class="subtitle-profile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nibh eget
+                mauris aliquam molestie. Nunc
+                malesuada, eros sed consequat sollicitudin, nisl sapien suscipit lectus, et blandit magna lacus eu
+                magna. </p>
+
+            <!-- item [ <section class="row"> ] redundante -->
+            <section class="row">
+                <img class="img" src="Imgs/Ednaldo1.png">
+                <img class="img" src="Imgs/Ednaldo2.png">
+                <img class="img" src="Imgs/Ednaldo3.jpg">
+                <img class="img" src="Imgs/Ednaldo4.png">
+            </section>
+            <!--</section>-->
+
+            <section class="description-profile">
+                <!-- removido o class [ row-nowrap ] pois estava sem uso -->
+                <section class="column">
+                    <!-- removido o class [ flex-item-1 ] pois estava sem uso -->
+                    <p class="align-left">Ednaldo Pereira é um cantor e compositor nascido no Distrito de Cachoeira dos
+                        Guedes, na cidade de
+                        Guarabira, Paraíba</p>
+                </section>
+                <section class="column align-center">
+                    <p>Músicas de sucesso:</p>
+                    <ul>
+                        <li>What is the brother?</li>
+                        <li>Vale nada, vale tudo</li>
+                        <li>Mulher contrariada</li>
+                        <li>Chance</li>
+                    </ul>
+                </section>
+                <section class="column">
+                    <!-- removido o class [ flex-item-1 ] pois estava sem uso -->
+                    <p class="align-right">Ednaldo Pereira é um cantor e compositor nascido no Distrito de Cachoeira dos
+                        Guedes, na cidade de
+                        Guarabira, Paraíba</p>
+                </section>
+            </section>
+        </section>
+
+        <hr />
+
+        <section class="content-profile">
+            <section class="title-profile">
+                <h2>András Arató </h2>
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCorsTDLSSkzYPTiS8xLKTq8sFghsSix5PBmAKDRC4I&q=andr%C3%A1s+arat%C3%B3&oq=andr%C3%A1s+a&aqs=chrome.1.69i57j46j69i59j0l4j69i60.2537j0j7&sourceid=chrome&ie=UTF-8"
+                    class="button">Mostrar mais</a>
+            </section>
+
+            <p class="subtitle-profile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nibh eget
+                mauris aliquam molestie. Nunc
+                malesuada, eros sed consequat sollicitudin, nisl sapien suscipit lectus, et blandit magna lacus eu
+                magna. </p>
+
+            <!-- item [ <section class="row"> ] redundante -->
+            <section class="row">
+                <img class="img" src="Imgs/Andras1.jpg">
+                <img class="img" src="Imgs/Andras2.png">
+                <img class="img" src="Imgs/Andras3.jpg">
+                <img class="img" src="Imgs/Andras4.jpg">
+            </section>
+            <!--</section>-->
+
+            <section class="description-profile">
+                <!-- removido o class [ row-nowrap ] pois estava sem uso -->
+                <section class="column">
+                    <!-- removido o class [ flex-item-1 ] pois estava sem uso -->
+                    <p class="align-left">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipiscing elit. Aenean
+                        quis nibh eget mauris
+                        aliquam molestie.</p>
+                </section>
+                <section class="column align-center">
+                    <p>Dados pessoais:</p>
+                    <ol>
+                        <li>Nascimento: 1945 </li>
+                        <li>Idade: 75 anos</li>
+                        <li>Cidade: Kőszeg, Hungria</li>
+                        </ul>
+                </section>
+                <section class="column">
+                    <!-- removido o class [ flex-item-1 ] pois estava sem uso -->
+                    <p class="align-right">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipiscing elit. Aenean
+                        quis nibh eget mauris
+                        aliquam molestie.</p>
+                </section>
+            </section>
+        </section>
 </body>
-
 
 </html>
